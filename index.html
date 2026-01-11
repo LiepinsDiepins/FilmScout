@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  >
+
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-play-circle"></i>
+                <span>FilmScout</span>
+            </div>
+            <div class="nav-center">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="About.html" class="nav-link active">About</a>
+                <a href="#" class="nav-link active">Continue watching</a>
+            </div>
+            
+            <div class="nav-actions">
+                <i class="fas fa-bell"></i>
+                <div class="user-menu">EN</div>
+            </div>
+        </nav>
+        
+        <div class="top-main-content">
+            <div class="main-text">
+                <h1 class="main-title">Endless Films To Discover</h1>
+                <p class="main-subtitle">Discover movies and shows from around the world</p>
+
+                <div class="search-main">
+                    <div class="search-container-main">
+                        <input type="text" id="movieInputMain" placeholder="What do you want to watch today?">
+                        <button id="searchBtnMain" class="cta-button">
+                            <i class="fas fa-search"></i>
+                            Find movies
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-overlay"></div>
+    </header>
+
+    <div class="Main-section">
+        <div class="random-movies-section">
+            <h2> Some Popular Movies You Might Like</h2>
+            <div id="randomMovies" class="movies-random-grid"></div>
+        </div>
+
+        <div class="trending-movies-section">
+            <h2>Trending Movies</h2>
+            <div id="trendingMovies" class="movies-grid"></div>
+        </div>
+
+        <div class="car-movies-section">
+            <h2>Car movie section</h2>
+            <div id="carMovies" class="movies-grid"></div>
+        </div>
+
+        <div class="cartoon-movies-section">
+            <h2>Cartoon Movies</h2>
+            <div id="cartoonMovies" class="movies-grid"></div>
+        </div>
+        <div id="movie" class="movie-results"></div>
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <i class="fas fa-play-circle"></i>
+                    <span>FilmScout</span>
+                </div>
+                <p class="footer-tagline">Search any movie right now!</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <p>&copy; 2026 FilmScout. All rights reserved.</p>
+            </div>
+        </div>
+
+        <a id="top"></a> 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+  </script>
+</body>
+</html>
