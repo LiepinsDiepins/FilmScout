@@ -49,7 +49,7 @@ function loadMovies(box,movies,num){
     let selected = shuffled.slice(0,num);
 
     selected.forEach(function(title){
-        fetch('https://www.omdbapi.com/?t='+encodeURIComponent(title)+'&apikey=a833c3fc')
+        fetch('https://www.omdbapi.com/?t='+encodeURIComponent(title)+'&apikey=71cfe7b9')
         .then(resp=>resp.json())
         .then(function(data){
             if(data.Response == "True"){
@@ -73,7 +73,7 @@ function loadMovies(box,movies,num){
 
 // Fetch movie ar search
 function fetchMovie(title){
-    fetch('https://www.omdbapi.com/?t='+encodeURIComponent(title)+'&apikey=a833c3fc')
+    fetch('https://www.omdbapi.com/?t='+encodeURIComponent(title)+'&apikey=71cfe7b9')
     .then(resp=>resp.json())
     .then(function(data){
         if(data.Response=="True"){
